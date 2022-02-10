@@ -13,3 +13,4 @@ set -o pipefail
 # install .NET 6 or newer
 # install Apache WebServer
 # install certbot: https://certbot.eff.org/instructions?ws=apache&os=debianbuster
+# install Elastic Search

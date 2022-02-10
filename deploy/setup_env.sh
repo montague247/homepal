@@ -10,7 +10,19 @@ set -u
 # This is causing it to fail
 set -o pipefail
 
-# install .NET 6 or newer
-# install Apache WebServer
-# install certbot: https://certbot.eff.org/instructions?ws=apache&os=debianbuster
-# install Elastic Search
+# install ansible
+#  - install .NET 6 or newer
+#  - install Apache WebServer
+#  - install certbot: https://certbot.eff.org/instructions?ws=apache&os=debianbuster
+#  - install Elastic Search
+
+echo "Setup environment '$OSTYPE'..."
+
+sudo apt update
+sudo apt upgrade -y
+sudo apt install ansible -y
+
+echo "Installed ansible version:"
+ansible --version
+
+echo "Environment is up-2-date"

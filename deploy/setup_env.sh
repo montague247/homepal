@@ -19,6 +19,7 @@ set -o pipefail
 echo "Setup environment '$OSTYPE'..."
 
 sudo apt update
+apt list --upgradable
 sudo apt upgrade -y
 sudo apt install ansible -y
 
